@@ -4,23 +4,23 @@
 // let license = responses[9]
 
 function renderLicenseBadge(license) {
-  if (license === "MIT License") {
+  if (license === "MIT") {
     return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
   }
 
-  if (license === "Apache License") {
+  if (license === "Apache") {
     return `![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
   }
 
-  if (license === "GNU GPLv3 License") {
+  if (license === "GNU GPLv3") {
     return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
   }
 
-  if (license === "BSD 3-Clause License") {
+  if (license === "BSD 3-Clause") {
     return `![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`
   }
 
-  if (license === "ISC License") {
+  if (license === "ISC") {
     return `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)`
   }
 }
@@ -28,23 +28,23 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === "MIT License") {
+  if (license === "MIT") {
     return `![License](https://opensource.org/license/mit)`
   }
 
-  if (license === "Apache License") {
+  if (license === "Apache") {
     return `![License](https://opensource.org/license/apache-2-0)`
   }
 
-  if (license === "GNU GPLv3 License") {
+  if (license === "GNU GPLv3") {
     return `![License](https://opensource.org/license/gpl-3-0)`
   }
 
-  if (license === "BSD 3-Clause License") {
+  if (license === "BSD 3-Clause") {
     return `![License](https://opensource.org/license/bsd-3-clause)`
   }
 
-  if (license === "ISC License") {
+  if (license === "ISC") {
     return `![License](https://opensource.org/license/isc-license-txt)`
   }
 }
@@ -74,38 +74,41 @@ function generateMarkdown(responses) {
 
   ${responses[1]}
 
+  ## Table of Contents
+
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Contributing](#contributing)
+  ### [Lisence](#license)
+  ### [Tests](#tests)
+  ### [Questions](#questions)
+
   ## Getting Started
 
-  ### Dependencies
+  ### Installation
 
   * ${responses[2]}
 
-  ### Installing
+  ### Usage
 
   * ${responses[3]}
 
-  ### Executing program
+  ${renderLicenseSection(responses[4])}
 
-  * ${responses[4]}
+  ## Contributing
 
-  ## Help
-
-  ${responses[5]}
-
-  ## Authors
-
+  * ${responses[5]}
   * ${responses[6]}
-  * ${responses[7]}
 
-  ## Version History
+  ## Tests
+
+  ${responses[7]}
+
+  ## Questions
 
   * ${responses[8]}
-
-  ${renderLicenseSection(responses[9])}
-
-  ## Acknowledgments
-
-  * ${responses[10]}
+  * ${responses[6]}
+  * [Github Profile](github.com/${responses[9]})
 
 `;
 }

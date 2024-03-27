@@ -6,17 +6,16 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
-    "What is your project title? ",
-    "What is your description for this project? ",
-    "What dependencies do you need before installing this program? This includes libraries or other applications needed for this program to run. ",
-    "How and where can I install your programs? ",
-    "How does a user use your website?",
-    "What do users do if they encounter issues? ",
-    "What is the author's name? ",
-    "What is the author's email? ",
-    "What is the version history? ",
-    "What type of license does this program use? ",
-    "What other resources did you use to write this program? "
+    "0 What is your project title? ",
+    "1 What is your description for this project? ",
+    "2 How do I install your program? ",
+    "3 How does a user use your website?",
+    "4 What type of license does this program use? ",
+    "5 What is the author's name? ",
+    "6 What is the author's email? ",
+    "7 What type of tests did you create for your program?", 
+    "8 What do users do if they encounter issues? ",
+    "9 What is your github username? ",
 ];
 
 // TODO: Create a function to write README file
@@ -47,10 +46,6 @@ function init() {
             });
         } else {
             rl.close();
-            // const license = responses[9]
-            // renderLicenseBadge(license)
-            // renderLicenseLink(license)
-            // renderLicenseSection(license)
             const readmeContent = generateMarkdown(responses)
             writeToFile('README.md', readmeContent);
         }
