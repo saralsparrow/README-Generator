@@ -1,48 +1,47 @@
-# Professional README Generator Starter Code
-
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-
-# README Generator
+  # REAME.md Generator
 
   ## Description
 
   This README Generator asks questions and generates a READM.md file for your project.
 
+  ## Table of Contents
+
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Contributing](#contributing)
+  ### [Lisence](#license)
+  ### [Tests](#tests)
+  ### [Questions](#questions)
+
   ## Getting Started
 
-  ### Dependencies
+  ### Installation
 
   * Install node.js prior to using
 
-  ### Installing
+  ### Usage
 
-  * You can use this program in any computer terminal.
-
-  ### Executing program
-
-  * Navigate to the correct file in your computer terminal. Then type "node index.js". You will then be asked a series of quesitons about your project. Once you have finished answering them, your README.md file will be automatically created. You can then move your README file whereever you would like. 
-
-  ## Help
-
-  Try restarting the program. If you need additional help, contact one of the authors!
-
-  ## Authors
-
-  Sara Sparrow
-  s.l.hubbard19@gmail.com
-
-  ## Version History
-
-  * 
+  * Navigate to the correct file in your computer terminal. Then type "node index.js". You will then be asked a series of quesitons about your project. Once you have finished answering them, your README.md file will be automatically created. You can then move your README file whereever you would like.
 
   
   ## License
 
-  This project is licensed under the [MIT License License](![License](https://opensource.org/license/mit)). ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  This project is licensed under the [MIT Lisence ](undefined). undefined
   
 
-  ## Acknowledgments
+  ## Contributing
 
-  * ChatGPT - used for understanding 
+  * Sara Sparrow
+  * s.l.hubbard19@gmail.com
 
+  ## Tests
+
+  None
+
+  ## Questions
+
+  * Try restarting the program. If you need additional help, feel free to reach out
+  * Feel free to reach out via email with any questions!
+  * s.l.hubbard19@gmail.com
+  * [Github Profile](github.com/slsparrow)
 
