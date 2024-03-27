@@ -40,8 +40,7 @@
 
   ## Questions
 
-  * Try restarting the program. If you need additional help, feel free to reach out
-  * Feel free to reach out via email with any questions!
+  * Try restarting the program. If you need additional help, feel free to reach out!
   * s.l.hubbard19@gmail.com
   * [Github Profile](github.com/slsparrow)
 
